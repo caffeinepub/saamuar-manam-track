@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Green wellness palette */
+    --background: 0.97 0 0;
+    --foreground: 0.14 0 0;
+    --card: 1 0 0;
+    --card-foreground: 0.14 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.14 0 0;
+
+    /* Primary: dark green #184D2E */
+    --primary: 0.28 0.085 152;
+    --primary-foreground: 1 0 0;
+
+    /* Secondary: soft mint */
+    --secondary: 0.96 0.025 145;
+    --secondary-foreground: 0.28 0.085 152;
+
+    /* Muted: light gray */
+    --muted: 0.96 0.005 145;
+    --muted-foreground: 0.47 0.01 220;
+
+    /* Accent: light green #7FD36B */
+    --accent: 0.79 0.16 140;
+    --accent-foreground: 0.14 0 0;
+
+    --destructive: 0.6 0.19 25;
+    --destructive-foreground: 1 0 0;
+
+    --border: 0.9 0.015 145;
+    --input: 0.92 0.01 145;
+    --ring: 0.28 0.085 152;
+
+    /* Risk colors */
+    --risk-high: 0.6 0.19 25;
+    --risk-medium: 0.77 0.13 72;
+    --risk-low: 0.66 0.13 152;
+
+    /* Hero mint gradient */
+    --mint-bg: 0.96 0.025 145;
+
+    --chart-1: 0.66 0.13 152;
+    --chart-2: 0.79 0.16 140;
+    --chart-3: 0.28 0.085 152;
+    --chart-4: 0.77 0.13 72;
+    --chart-5: 0.6 0.19 25;
+
+    --sidebar: 0.28 0.085 152;
+    --sidebar-foreground: 1 0 0;
+    --sidebar-primary: 0.79 0.16 140;
+    --sidebar-primary-foreground: 0.14 0 0;
+    --sidebar-accent: 0.35 0.08 152;
+    --sidebar-accent-foreground: 1 0 0;
+    --sidebar-border: 0.35 0.06 152;
+    --sidebar-ring: 0.79 0.16 140;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
